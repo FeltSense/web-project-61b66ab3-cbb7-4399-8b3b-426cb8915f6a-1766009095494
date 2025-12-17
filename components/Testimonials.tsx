@@ -7,19 +7,19 @@ const testimonials = [
   {
     name: 'Alexandra Chen',
     role: 'Fashion Influencer & Stylist',
-    quote: 'The curation here is impeccable. Every piece tells a story and reflects genuine craftsmanship. I've recommended this boutique to all my followers.',
+    quote: "The curation here is impeccable. Every piece tells a story and reflects genuine craftsmanship. I've recommended this boutique to all my followers.",
     avatar: 'https://i.pravatar.cc/150?img=1',
   },
   {
     name: 'Priya Patel',
     role: 'Creative Director',
-    quote: 'Finding sustainable luxury shouldn't be this easy. Their selection of emerging designers is exactly what the market needs.',
+    quote: "Finding sustainable luxury shouldn't be this easy. Their selection of emerging designers is exactly what the market needs.",
     avatar: 'https://i.pravatar.cc/150?img=5',
   },
   {
     name: 'Jordan Mitchell',
     role: 'Fashion Editor',
-    quote: 'The attention to detail in their collection is remarkable. Quality, sustainability, and style—they've mastered the trifecta.',
+    quote: "The attention to detail in their collection is remarkable. Quality, sustainability, and style—they've mastered the trifecta.",
     avatar: 'https://i.pravatar.cc/150?img=8',
   },
   {
