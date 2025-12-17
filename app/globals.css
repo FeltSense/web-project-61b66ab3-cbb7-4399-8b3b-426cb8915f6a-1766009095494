@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 🎨 DESIGN CONTRACT - Brand Colors & Fonts */
+:root {
+  /* Typography */
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-heading: 'Plus Jakarta Sans', system-ui, sans-serif;
+  
+  /* Brand Colors - USE THESE! */
+  --brand-primary: theme('colors.indigo.600');
+  --brand-primary-hover: theme('colors.indigo.700');
+  --brand-secondary: theme('colors.slate.900');
+  --brand-accent: theme('colors.emerald.500');
+  --brand-primary-light: theme('colors.indigo.50');
+}
+
+html { 
+  scroll-behavior: smooth; 
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: #ffffff;
+  color: #64748b;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: #0f172a;
+}
+
+/* 🎨 DESIGN CONTRACT ENFORCED CLASSES */
+/* Use these in components for consistency! */
+.text-brand-primary { 
+  color: var(--brand-primary); 
+}
+
+.bg-brand-primary { 
+  background-color: var(--brand-primary); 
+}
+
+.bg-brand-primary-light { 
+  background-color: var(--brand-primary-light); 
+}
+
+.border-brand-primary { 
+  border-color: var(--brand-primary); 
+}
+
+/* Premium Button Styles */
+.btn-primary {
+  @apply bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-xl px-8 py-4 transition-all duration-300 shadow-sm hover:shadow-md;
+}
+
+.btn-secondary {
+  @apply bg-slate-100 hover:bg-slate-200 text-slate-900 font-semibold rounded-xl px-8 py-4 transition-all duration-300;
+}
+
+/* Premium Card Styles */
+.card-premium {
+  @apply bg-white rounded-2xl shadow-sm border border-slate-100 p-6 transition-all duration-300 hover:shadow-md hover:-translate-y-1;
+}
+
+/* Section Spacing */
+.section-spacing {
+  @apply py-24 md:py-32;
+}
+
+/* Container */
+.container-premium {
+  @apply max-w-7xl mx-auto px-6 sm:px-8 lg:px-12;
+}
+
+/* Premium Typography */
+.heading-1 {
+  @apply text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.1] text-slate-900;
+}
+
+.heading-2 {
+  @apply text-3xl md:text-4xl font-bold tracking-tight leading-[1.1] text-slate-900;
+}
+
+.heading-3 {
+  @apply text-xl md:text-2xl font-semibold text-slate-900;
+}
+
+.body-text {
+  @apply text-slate-500 leading-relaxed;
+}
+
+/* Smooth Transitions */
+* {
+  @apply transition-colors duration-300;
+}
